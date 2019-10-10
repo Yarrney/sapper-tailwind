@@ -1,0 +1,62 @@
+/* Theme Styles Here */
+.theme-basic {
+  --color-text-primary: #fff; /* white */
+  --color-text-secondary: #38b2ac; /* teal */
+  --color-text-default: #3f3d56; /* dark grey */
+  --color-text-default-soft: #CBD5E0; /* grey-400 */
+  --color-text-link: #38b2ac; /* teal */
+  --color-text-hover: #2C7A7B; /* dark teal */
+  --color-text-inverse: #fff; /**/
+  --color-bg-primary: #38b2ac; /* teal */
+  --color-bg-secondary: #CBD5E0; /* grey-400 */
+  --color-bg-default: #fff; /* white */
+  --color-bg-inverse: #3f3d56; /* dark grey */
+}
+
+.theme-dark {
+  --color-text-primary: #3f3d56; /* dark grey */
+  --color-text-secondary: #38b2ac; /* teal */
+  --color-text-default: #CBD5E0; /* white */
+  --color-text-default-soft: #4A5568; /* grey-700 */
+  --color-text-link: #38b2ac; /* teal */
+  --color-text-hover: #2C7A7B; /* dark teal */
+  --color-text-inverse: #fff; /**/
+  --color-bg-primary: #38b2ac; /* teal */
+  --color-bg-secondary: #718096; /* grey-760 */
+  --color-bg-default: #3f3d56; /* dark grey */
+  --color-bg-inverse: #fff; 
+}
+
+@tailwind base;
+@tailwind components;
+
+/* Custom CSS Here - button example */
+.btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+
+.btn-primary {
+  @apply bg-primary text-primary;
+}
+
+.btn-primary:hover {
+  @apply bg-inverse;
+}
+
+.btn-secondary {
+  @apply bg-secondary;
+}
+.btn-secondary:hover {
+  @apply bg-inverse text-default-soft;
+}
+
+.link-primary {
+	@apply text-link underline;
+}
+
+.link-primary:hover {
+	@apply text-hover;
+}
+
+@tailwind utilities;
+
