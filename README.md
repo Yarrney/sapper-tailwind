@@ -1,9 +1,9 @@
 # Sapper and Tailwind Template
 
-Boilerplate template for Sappert + Tailwind with some added Firebase hosting (serverless)!
+Boilerplate template for Sapper + Tailwind (with a theme example)
 
 ```bash
-npm install # or yarn!
+npm install
 npm run watch:tailwind # in a separate terminal window
 npm run dev # in a separate terminal window
 ```
